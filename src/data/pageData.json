@@ -1,0 +1,40 @@
+[
+  {
+    "pageName": "home",
+    "pageHREF": "/",
+    "subLinks": [
+      {
+        "name": "About",
+        "href": "/#about"
+      },
+      {
+        "name": "Services",
+        "href": "/#services"
+      },
+      {
+        "name": "Featured",
+        "href": "/#featured"
+      }
+    ]
+  },
+  {
+    "pageName": "Bathrooms",
+    "pageHREF": "/bathrooms",
+    "subLinks": []
+  },
+  {
+    "pageName": "Kitchens",
+    "pageHREF": "/kitchens",
+    "subLinks": []
+  },
+  {
+    "pageName": "Home Spaces",
+    "pageHREF": "/home-spaces",
+    "subLinks": []
+  },
+  {
+    "pageName": "contact",
+    "pageHREF": "/#contact",
+    "subLinks": []
+  }
+]

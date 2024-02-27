@@ -1,23 +1,31 @@
 ---
+import pageData from "../data/pageData.json";
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
-import Button from "../components/Button.astro";
+import Hero from "../components/Hero.vue";
+
+let currentPage = pageData[0].pageName;
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout
+  title="Welcome to Astro."
+  page={currentPage}
+>
   <main>
-    <h1>Hello</h1>
-    <Button
-      text="This is a button"
-      href="/"
-      color="white"
+    <Hero
+      client:visible
+      title="Interior Design Solutions"
+      body="A bespoke interior design agency dedicated to transforming bold ideas into unique spaces."
+      buttonText="Learn More"
+      buttonHref="#about-ids"
+      buttonColor="primary"
+      heroImage="40"
     />
-   
   </main>
 </Layout>
 
-
-
-<style>
-
+<style is:global lang="scss">
+  .header__logo,
+  .header__burger-menu {
+    filter: brightness(9999);
+  }
 </style>
