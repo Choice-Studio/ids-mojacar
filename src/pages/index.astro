@@ -2,6 +2,8 @@
 import pageData from "../data/pageData.json";
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.vue";
+import ServiceCard from "../components/ServiceCard.vue";
+import ProjectThumbnail from "../components/ProjectThumbnail.vue";
 
 let currentPage = pageData[0].pageName;
 ---
@@ -21,7 +23,7 @@ let currentPage = pageData[0].pageName;
       heroImage="40"
     />
 
-    <section class="mt-24">
+    <section class="mt-36">
       <div
         id="about-ids"
         class="wrapper grid grid-cols-1 gap-8"
@@ -46,12 +48,112 @@ let currentPage = pageData[0].pageName;
         </div>
       </div>
     </section>
+    <section class="bg-primary w-full py-12 my-36 text-center text-white">
+      <div class="wrapper grid grid-cols-1">
+        <div>
+          <h3 class="text-l highlight--underline">
+            Considering a makeover for your space?
+          </h3>
+          <p class="my-14">
+            Renovating a space can be daunting, but it often helps to talk to an
+            expert. IDS offers multiple solutions for you to get in touch.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-16 mx-4">
+          <div class="flex flex-col items-center gap-3">
+            <p>Tel</p>
+            <div class="bg-white h-px w-2/3"></div>
+            <p>+44 780 058 090</p>
+          </div>
+          <div class="flex flex-col items-center gap-3">
+            <p>Email</p>
+            <div class="bg-white h-px w-2/3"></div>
+            <p>example@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="grid grid-cols-1 gap-32">
+      <ServiceCard
+        title="Bathrooms"
+        body="Transform your bathroom into a haven of relaxation with our bespoke design solutions. In the hustle and bustle of daily life. your bathroom should be more than just a functional space - it should be your personal retreat."
+        imageHref="101"
+        imageAlt="A picture of a renovated bathroom interior design."
+        buttonHref="/bathrooms"
+        buttonText="Our Bathroom Projects"
+        client:visible
+      />
+      <ServiceCard
+        title="Kitchens"
+        body="The kitchen is more than just a place to cook. IDS is passionate about designing kithens that are not only functional but also form the centrepiece of your home."
+        imageHref="43"
+        imageAlt="A picture of a renovated kitchen interior design."
+        buttonHref="/kitchens"
+        buttonText="Our Kitchen Projects"
+        client:visible
+      />
+      <ServiceCard
+        title="Home Spaces"
+        body="We believe that your home should be a reflect of your unique style and vision. That's why we specialise in creating spaces that are not only aesthetically please but also harmoniously connected throughout."
+        imageHref="80"
+        imageAlt="A picture of a renovated living room interior design."
+        buttonHref="/home-spaces"
+        buttonText="Our Home Spaces"
+        client:visible
+      />
+    </section>
+    <section class="bg-primary py-12 text-white text-center mt-36">
+      <div class="wrapper">
+        <h3 class="highlight--underline text-xl">Finding your vision</h3>
+        <div class="grid grid-cols 1 mt-12 gap-12">
+          <img
+            src="/project-images/106.jpg?url"
+            alt="3D render of bathroom interior design"
+            class="h-80 w-full"
+          />
+          <p>
+            Leveraging 3D models, we offer the unique opportunity to visualize
+            and experience your living space before any physical work begins.
+            <br />
+            <br />
+            This allows you to explore every aspect of the design to ensure it aligns
+            perfectly with your vision.
+          </p>
+          <a href="/#contact"
+            ><button class="button--white">Contact Us & Learn More</button></a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="mt-36">
+      <div class="wrapper">
+        <h4 class="text-center text-xl">Featured</h4>
+        <div class="grid grid-cols-1 gap-2 relative mt-4">
+          <ProjectThumbnail
+            projectID="0"
+            client:visible
+          />
+          <ProjectThumbnail
+            projectID="1"
+            client:visible
+          />
+          <ProjectThumbnail
+            projectID="2"
+            client:visible
+          />
+          <ProjectThumbnail
+            projectID="3"
+            client:visible
+          />
+        </div>
+      </div>
+    </section>
   </main>
-</Layout>
 
-<style is:global lang="scss">
-  .header__logo,
-  .header__burger-menu {
-    filter: brightness(9999);
-  }
-</style>
+  <style is:global lang="scss">
+    .header__logo,
+    .header__burger-menu {
+      filter: brightness(9999);
+    }
+  </style>
+</Layout>

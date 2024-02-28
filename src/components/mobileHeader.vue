@@ -20,7 +20,7 @@
     />
 
     <div
-      class="origin-top absolute w-full bg-primary top-0 left-0 h-screen px-4 py-12 text-center flex flex-col justify-center items-center gap-16"
+      class="origin-top w-full bg-primary top-0 left-0 h-screen px-4 py-12 text-center flex flex-col justify-center items-center gap-16 fixed"
       :class="[isNavHidden ? 'nav--hidden' : 'nav-visible']"
     >
       <img
@@ -37,7 +37,7 @@
         <a
           :href="link.pageHREF"
           class="header-text text-white text-2xl"
-          :class="[link.pageName == pageName ? 'dot-highlight' : '']"
+          :class="[link.pageName == pageName ? 'highlight--dot' : '']"
         >
           {{ link.pageName }}
         </a>
@@ -50,7 +50,7 @@
 import pageData from "../data/pageData.json";
 
 export default {
-  name: "mobileHeader",
+  name: "MobileHeader",
   // components: {
 
   // },

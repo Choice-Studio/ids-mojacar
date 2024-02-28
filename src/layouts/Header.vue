@@ -2,17 +2,17 @@
   <div class="w-full">
     <!-- <DesktopHeader :pageName="pageName" /> -->
 
-    <mobileHeader :pageName="pageName" />
+    <MobileHeader :pageName="pageName" />
   </div>
 </template>
 
 <script lang="ts">
 // import DesktopHeader from "../components/header/desktopHeader.vue";
-import mobileHeader from "../components/mobileHeader.vue";
+import MobileHeader from "../components/MobileHeader.vue";
 
 export default {
   name: "Header",
-  components: { mobileHeader },
+  components: { MobileHeader },
   props: {
     pageName: {
       type: String,

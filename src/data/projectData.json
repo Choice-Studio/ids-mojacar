@@ -1,0 +1,30 @@
+[
+  {
+    "id": 0,
+    "projectTitle": "Pueblo Casita Renovation",
+    "projectType": "kitchen",
+    "imageFile": "84.jpeg",
+    "projectHref": "pueblo-casita-renovation"
+  },
+  {
+    "id": 1,
+    "projectTitle": "Cheltenham Hotel Renovation",
+    "projectType": "home-space",
+    "imageFile": "36.jpeg",
+    "projectHref": "cheltenham-hotel-renovation"
+  },
+  {
+    "id": 2,
+    "projectTitle": "Kitchen Hong Kong",
+    "projectType": "kitchen",
+    "imageFile": "41.jpeg",
+    "projectHref": "kitchen-hong-kong"
+  },
+  {
+    "id": 3,
+    "projectTitle": "Villa Menorca",
+    "projectType": "bathroom",
+    "imageFile": "97.jpeg",
+    "projectHref": "villa-menorca"
+  }
+]

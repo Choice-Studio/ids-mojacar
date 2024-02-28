@@ -156,7 +156,7 @@ const { title, page } = Astro.props;
       padding: 0 0.5em;
     }
 
-    .dot-highlight::after {
+    .highlight--dot::after {
       content: "";
       display: block;
       width: 3px;
@@ -167,12 +167,29 @@ const { title, page } = Astro.props;
       border-radius: 50%;
     }
 
+    .highlight--underline::after {
+      content: "";
+      display: block;
+      width: 25%;
+      height: 1px;
+      background-color: white;
+      margin: 0 auto;
+      margin-top: 0.75em;
+    }
+
     button {
       background: var(--primary);
       color: white;
       padding: 0.75em 1.5em;
       font-family: "Montserrat", sans-serif;
       text-transform: uppercase;
+      box-shadow:
+        0px 0.7px 2.2px rgba(0, 0, 0, 0.02),
+        0px 1.6px 5.3px rgba(0, 0, 0, 0.028),
+        0px 3px 10px rgba(0, 0, 0, 0.035),
+        0px 5.4px 17.9px rgba(0, 0, 0, 0.042),
+        0px 10px 33.4px rgba(0, 0, 0, 0.05),
+        0px 24px 80px rgba(0, 0, 0, 0.07);
 
       &:hover {
         filter: brightness(1.1);
@@ -191,6 +208,9 @@ const { title, page } = Astro.props;
       &:active {
         filter: brightness(0.8);
       }
+    }
+    img {
+      object-fit: cover;
     }
   </style>
 </html>
