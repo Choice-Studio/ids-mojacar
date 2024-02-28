@@ -10,7 +10,7 @@ let currentPage = pageData[0].pageName;
   title="Welcome to Astro."
   page={currentPage}
 >
-  <main>
+  <main class="mb-64">
     <Hero
       client:visible
       title="Interior Design Solutions"
@@ -20,6 +20,32 @@ let currentPage = pageData[0].pageName;
       buttonColor="primary"
       heroImage="40"
     />
+
+    <section class="mt-24">
+      <div
+        id="about-ids"
+        class="wrapper grid grid-cols-1 gap-8"
+      >
+        <div class="">
+          <img
+            src="/project-images/72.jpeg?url"
+            alt="A picture of a house front porch. Walls are painted blue and white."
+            class="aspect-square w-full"
+          />
+        </div>
+        <div class="text-center">
+          <h2 class="text-5xl">IDS</h2>
+          <p class="mt-8">
+            Established by Gary Moores and Mirko Lucchini, IDS unites top-tier
+            interior design experts to transform your home.
+            <br />
+            <br />
+            We are committed to meticulously managing each project to guarantee outstanding
+            quality and harmonious results.
+          </p>
+        </div>
+      </div>
+    </section>
   </main>
 </Layout>
 
