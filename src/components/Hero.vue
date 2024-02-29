@@ -35,7 +35,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 section {
   height: calc(100vh - 1em);
   min-height: 42rem;
