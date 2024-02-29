@@ -1,5 +1,5 @@
 ---
-import Header from "../layouts/Header.vue";
+import MobileHeader from "../components/MobileHeader.vue";
 import Footer from "../layouts/Footer.vue";
 interface Props {
   title: string;
@@ -34,7 +34,7 @@ const { title, page } = Astro.props;
   </head>
   <html>
     <body>
-      <Header
+      <MobileHeader
         client:visible
         pageName={page}
       />
