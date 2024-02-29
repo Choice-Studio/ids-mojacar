@@ -1,6 +1,6 @@
 <template>
   <section
-    class="hero w-full text-center flex flex-col justify-center items-center h-200 relative"
+    class="hero w-full text-center flex flex-col justify-center items-center h-160 relative"
     :style="
       `background-image: url(/project-images/` + heroImage + `.jpeg?url);`
     "
