@@ -1,6 +1,6 @@
 <template>
   <section
-    class="hero w-full text-center flex flex-col justify-center items-center h-160 relative"
+    class="hero w-full text-center flex flex-col justify-center items-center relative"
     :style="
       `background-image: url(/project-images/` + heroImage + `.jpeg?url);`
     "
@@ -36,6 +36,10 @@ export default {
 </script>
 
 <style lang="scss">
+section {
+  height: calc(100vh - 4em);
+}
+
 .hero {
   background-size: cover;
   background-position: center;
