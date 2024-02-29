@@ -37,7 +37,8 @@ export default {
 
 <style lang="scss">
 section {
-  height: calc(100vh - 4em);
+  height: calc(100vh - 1em);
+  min-height: 42rem;
 }
 
 .hero {
