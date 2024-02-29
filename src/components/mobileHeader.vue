@@ -46,7 +46,7 @@
   </header>
 </template>
 
-<script lang="ts">
+<script>
 import pageData from "../data/pageData.json";
 
 export default {
