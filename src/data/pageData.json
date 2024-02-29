@@ -1,6 +1,6 @@
 [
   {
-    "pageName": "home",
+    "pageName": "Home",
     "pageHREF": "/",
     "subLinks": [
       {
@@ -33,7 +33,7 @@
     "subLinks": []
   },
   {
-    "pageName": "contact",
+    "pageName": "Contact",
     "pageHREF": "/#contact",
     "subLinks": []
   }
