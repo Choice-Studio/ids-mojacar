@@ -50,7 +50,7 @@
 import pageData from "../data/pageData.json";
 
 export default {
-  name: "MobileHeader",
+  name: "Header",
   // components: {
 
   // },
