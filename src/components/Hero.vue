@@ -11,8 +11,8 @@
     >
       <h1 class="">{{ title }}</h1>
       <p>{{ body }}</p>
-      <a href="#about-ids">
-        <button>Learn More</button>
+      <a :href="buttonHref">
+        <button>{{ buttonText }}</button>
       </a>
     </div>
   </section>

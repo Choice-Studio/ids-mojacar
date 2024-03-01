@@ -4,26 +4,29 @@ import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.vue";
 import AllProjects from "../components/AllProjects.vue";
 
-let currentPage = pageData[1].pageName;
+let currentPage = pageData[2].pageName;
 ---
 
 <Layout
-  title="Interior Design Solutions | IDS | Bathrooms"
+  title="Interior Design Solutions | IDS | Kitchens"
   page={currentPage}
 >
   <main>
     <Hero
       client:visible
-      title="Bathrooms"
-      body="Our expertise lies in crafting space that resonate with your personal style while ensuring the utmost in luxury and relaxation. Whether it's a modern minimalist haven or a lavish traditional ensemble, our designs are tailored to be your personal oasis."
-      buttonText="Our Bathroom Projects"
+      title="Kitchens"
+      body="Whether you envision a sleek, modern layout with state-of-the-art appliances or a cosy, traditional kitchen with warm, inviting tones, we bring your vision to life with impeccable attention to detail."
+      buttonText="Our Kitchen Projects"
       buttonHref="#projects"
       buttonColor="primary"
-      heroImage="101"
+      heroImage="37"
     />
-    <section class="mt-36" id="projects">
+    <section
+      class="mt-36"
+      id="projects"
+    >
       <AllProjects
-        filter="bathroom"
+        filter="kitchen"
         client:visible
       />
     </section>
@@ -32,22 +35,20 @@ let currentPage = pageData[1].pageName;
         <div class="wrapper bg-primary">
           <div class="bg-primary text-center py-14">
             <div>
-              <h3 class="text-2xl highlight--underline">Our Kitchens</h3>
+              <h3 class="text-2xl highlight--underline">Our Bathrooms</h3>
               <img
-                src="/project-images/40.jpeg?url"
+                src="/project-images/97.jpeg?url"
                 alt=""
                 class="w-full h-80 mt-12"
               />
               <p class="my-12">
-                Our kitchen design portfolio showcases a variety of styles and
-                solutions that we've crafted for clients just like you.
-                <br />
-                <br />
-                From modern minimalism to classic elegance, each kitchen is a testament
-                to our commitment to quality, creativity, and bespoke design.
+                Here, we have curated a collection of our finest bathroom transformations, each reflecting our passion for crafting spaces that blend relaxation with sophistication.
+                <br>
+                <br>
+                From luxurious spa-like retreats to sleek, modern designs, our portfolio showcases the breadth of our creativity and attention to detail.
               </p>
-              <a href="/kitchens"
-                ><button class="button--white"> View Our Kitchens</button></a
+              <a href="/bathrooms"
+                ><button class="button--white"> View Our Bathrooms</button></a
               >
             </div>
           </div>
