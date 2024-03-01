@@ -22,19 +22,19 @@ let currentPage = pageData[0].pageName;
       heroImage="40"
     />
 
-    <section class="mt-36">
+    <section class="mt-36 md:mt-48">
       <div
         id="about"
-        class="wrapper grid grid-cols-1 gap-8"
+        class="wrapper grid grid-cols-1 gap-8 md:grid-cols-2 md:place-items-center text-center md:text-left md:gap-12"
       >
-        <div class="">
+        <div class="md:w-full">
           <img
             src="/project-images/72.jpeg?url"
             alt="A picture of a house front porch. Walls are painted blue and white."
-            class="aspect-square w-full"
+            class="aspect-square w-full md:aspect-auto md:h-96"
           />
         </div>
-        <div class="text-center">
+        <div class="">
           <h2 class="text-5xl">IDS</h2>
           <p class="mt-8">
             Established by Gary Moores and Mirko Lucchini, IDS unites top-tier
@@ -47,26 +47,32 @@ let currentPage = pageData[0].pageName;
         </div>
       </div>
     </section>
-    <section class="bg-primary w-full py-12 my-36 text-center text-white">
-      <div class="wrapper grid grid-cols-1">
+    <section
+      class="bg-primary w-full py-12 my-36 text-center text-white md:mt-48 md:text-left md:py-10"
+    >
+      <div class="wrapper grid grid-cols-1 md:grid-cols-2">
         <div>
-          <h3 class="text-l highlight--underline">
+          <h3
+            class="text-lg highlight--underline highlight--underline--left md:text-xl"
+          >
             Considering a makeover for your space?
           </h3>
-          <p class="my-14">
+          <p class="my-14 md:mb-0">
             Renovating a space can be daunting, but it often helps to talk to an
             expert. IDS offers multiple solutions for you to get in touch.
           </p>
         </div>
-        <div class="grid grid-cols-2 gap-16 mx-4">
-          <div class="flex flex-col items-center gap-3">
+        <div
+          class="grid grid-cols-2 gap-16 mx-4 md:grid-cols-1 md:mx-0 md:gap-8"
+        >
+          <div class="flex flex-col items-center gap-3 md:items-end">
             <p>Tel</p>
-            <div class="bg-white h-px w-2/3"></div>
+            <div class="bg-white h-px w-2/3 md:w-1/4"></div>
             <p>+44 780 058 090</p>
           </div>
-          <div class="flex flex-col items-center gap-3">
+          <div class="flex flex-col items-center gap-3 md:items-end">
             <p>Email</p>
-            <div class="bg-white h-px w-2/3"></div>
+            <div class="bg-white h-px w-2/3 md:w-1/4"></div>
             <p>example@gmail.com</p>
           </div>
         </div>

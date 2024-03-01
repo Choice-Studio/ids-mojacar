@@ -237,6 +237,16 @@ const { title, page } = Astro.props;
       .wrapper {
         padding: 0 1em;
       }
+      .highlight--underline--right::after {
+        left: auto !important;
+        margin-right: 0;
+        width: 35%;
+      }
+      .highlight--underline--left::after {
+        right: auto !important;
+        margin-left: 0;
+        width: 35%;
+      }
     }
   </style>
 </html>
