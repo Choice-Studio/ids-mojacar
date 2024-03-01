@@ -1,6 +1,6 @@
 <template>
   <header
-    class="absolute top-0 left-0 flex lg:hidden justify-between items-center w-full mx-auto z-10 wrapper py-2 md:top-4"
+    class="absolute top-2 left-0 flex justify-between items-center w-full mx-auto z-10 wrapper py-2 md:top-4"
   >
     <div class="grid place-items-center">
       <a href="/">

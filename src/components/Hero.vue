@@ -7,13 +7,15 @@
   >
     <div class="dark-overlay absolute top-0 bottom-0 right-0 left-0"></div>
     <div
-      class="wrapper w-full flex flex-col justify-center items-center gap-12"
+      class="wrapper w-full flex flex-col justify-center items-center gap-12 md:gap-36"
     >
-      <h1 class="text-3xl md:text-6xl">{{ title }}</h1>
-      <p>{{ body }}</p>
-      <a :href="buttonHref">
-        <button>{{ buttonText }}</button>
-      </a>
+      <h1 class="text-3xl md:text-6xl md:mt-36">{{ title }}</h1>
+      <div class="flex flex-col gap-12 md:gap-8 md:items-end w-full">
+        <p class="md:text-right md:max-w-96">{{ body }}</p>
+        <a :href="buttonHref">
+          <button>{{ buttonText }}</button>
+        </a>
+      </div>
     </div>
   </section>
 </template>
@@ -57,5 +59,11 @@ section {
 .dark-overlay {
   background-color: rgba(0, 0, 0, 0.25);
   z-index: 1;
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    height: 56em;
+  }
 }
 </style>
