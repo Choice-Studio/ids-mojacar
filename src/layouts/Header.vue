@@ -1,13 +1,13 @@
 <template>
   <header
-    class="absolute top-0 left-0 flex lg:hidden justify-between items-center w-full mx-auto z-10 wrapper py-2 md:top-2"
+    class="absolute top-0 left-0 flex lg:hidden justify-between items-center w-full mx-auto z-10 wrapper py-2 md:top-4"
   >
-    <div class="w-12 h-12 grid place-items-center">
+    <div class="grid place-items-center">
       <a href="/">
         <img
           src="/ids-logo--blue.svg?url"
           alt="IDS logo"
-          class="header__logo"
+          class="header__logo w-12"
         />
       </a>
     </div>
