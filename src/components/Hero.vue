@@ -9,7 +9,7 @@
     <div
       class="wrapper w-full flex flex-col justify-center items-center gap-12"
     >
-      <h1 class="">{{ title }}</h1>
+      <h1 class="text-3xl md:text-6xl">{{ title }}</h1>
       <p>{{ body }}</p>
       <a :href="buttonHref">
         <button>{{ buttonText }}</button>
@@ -49,7 +49,6 @@ section {
   color: white;
   h1 {
     color: white;
-    font-size: 2rem;
   }
 }
 .hero * {
