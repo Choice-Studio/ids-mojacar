@@ -4,7 +4,9 @@
     :style="
       `background-image: url(/project-images/` +
       projects[projectID].imageFile +
-      `?url);`
+      `?url); background-position: ` +
+      projects[projectID].imagePosition +
+      `;`
     "
     v-if="filter == 'all' || projects[projectID].projectType == filter"
   >
@@ -80,6 +82,5 @@ a {
 
 div {
   background-size: cover;
-  background-position: center;
 }
 </style>

@@ -6,6 +6,7 @@
     "projectDescription1": "Set in the heart of a historic pueblo, this quaint casita was transformed from a time-worn structure into a modern haven that respects and reflects its cultural heritage.",
     "projectDescription2": "We meticulously restored original elements while integrating modern amenities, ensuring the casita remained true to its roots yet fully functional for today's living. Natural materials, earthy tones. and artisanal touches come together in this cosy, inviting space, creating a seamless blend of past and present",
     "imageFile": "84.jpeg",
+    "imagePosition": "center center",
     "projectHref": "pueblo-casita-renovation",
     "projectImages": [
       "36.jpeg",
@@ -21,6 +22,7 @@
     "projectTitle": "Cheltenham Hotel Renovation",
     "projectType": "home-space",
     "imageFile": "36.jpeg",
+    "imagePosition": "50% 75%",
     "projectHref": "cheltenham-hotel-renovation",
     "projectImages": ["36.jpeg"]
   },
@@ -29,6 +31,7 @@
     "projectTitle": "Kitchen Hong Kong",
     "projectType": "kitchen",
     "imageFile": "41.jpeg",
+    "imagePosition": "50% 22%",
     "projectHref": "kitchen-hong-kong",
     "projectImages": ["36.jpeg"]
   },
@@ -37,6 +40,7 @@
     "projectTitle": "Villa Menorca",
     "projectType": "bathroom",
     "imageFile": "97.jpeg",
+    "imagePosition": "center",
     "projectHref": "villa-menorca",
     "projectImages": ["36.jpeg"]
   }
