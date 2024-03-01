@@ -1,0 +1,87 @@
+---
+import pageData from "../data/pageData.json";
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.vue";
+import AllProjects from "../components/AllProjects.vue";
+
+let currentPage = pageData[1].pageName;
+---
+
+<Layout
+  title="Interior Design Solutions | IDS | Bathrooms"
+  page={currentPage}
+>
+  <main>
+    <Hero
+      client:visible
+      title="Bathrooms"
+      body="Our expertise lies in crafting space that resonate with your personal style while ensuring the utmost in luxury and relaxation. Whether it's a modern minimalist haven or a lavish traditional ensemble, our designs are tailored to be your personal oasis."
+      buttonText="Our Bathroom Projects"
+      buttonHref="#projects"
+      buttonColor="primary"
+      heroImage="101"
+    />
+    <section class="mt-36">
+      <AllProjects
+        filter="bathroom"
+        client:visible
+      />
+    </section>
+    <section class="bg-primary grid grid-cols-1 gap-24 mt-36">
+      <section class="text-white text-center">
+        <div class="wrapper bg-primary">
+          <div class="bg-primary text-center py-14">
+            <div>
+              <h3 class="text-2xl highlight--underline">Our Kitchens</h3>
+              <img
+                src="/project-images/40.jpeg?url"
+                alt=""
+                class="w-full h-80 mt-12"
+              />
+              <p class="my-12">
+                Our kitchen design portfolio showcases a variety of styles and
+                solutions that we've crafted for clients just like you.
+                <br />
+                <br />
+                From modern minimalism to classic elegance, each kitchen is a testament
+                to our commitment to quality, creativity, and bespoke design.
+              </p>
+              <a href="/kitchens"
+                ><button class="button--white"> View Our Kitchens</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="text-white text-center">
+        <div class="wrapper bg-primary">
+          <div class="bg-primary text-center py-14">
+            <div>
+              <h3 class="text-2xl highlight--underline">Our Home Spaces</h3>
+              <img
+                src="/project-images/87.jpeg?url"
+                alt=""
+                class="w-full h-80 mt-12"
+              />
+              <p class="my-12">
+                Here, you'll find a collection of complete home transformations,
+                each reflecting our dedication to creating harmonious,
+                personalized living spaces.
+              </p>
+              <a href="/home-spaces"
+                ><button class="button--white"> View Our Home Spaces</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+</Layout>
+
+<style is:global lang="scss">
+  .header__logo,
+  .header__burger-menu {
+    filter: brightness(9999);
+  }
+</style>

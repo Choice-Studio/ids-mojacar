@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-primary text-white">
+  <section class="bg-primary text-white mt-48">
     <div class="wrapper bg-primary">
       <div class="">
         <img

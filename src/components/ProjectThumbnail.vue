@@ -6,6 +6,7 @@
       projects[projectID].imageFile +
       `?url);`
     "
+    v-if="filter == 'all' || projects[projectID].projectType == filter"
   >
     <div class="dark-overlay absolute top-0 bottom-0 right-0 left-0"></div>
     <h3 class="text-2xl">
@@ -42,6 +43,14 @@ export default {
   name: "ProjectThumbnail",
   props: {
     projectID: Number,
+    filter: {
+      type: String,
+      default: "all",
+    },
+    isVisible: {
+      type: Boolean,
+      default: true,
+    },
   },
   data() {
     return {
