@@ -1,0 +1,50 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import projectData from "../../data/projectData.json";
+import ProjectGallery from "../../components/ProjectGallery.vue";
+
+let project = projectData[0];
+let projectTitle = project.projectTitle;
+let pageTitle = "Interior Design Solutions | IDS |" + projectTitle;
+let imageFile = "/project-images/" + project.imageFile + "?url";
+let imageAlt = "A picture of " + projectTitle;
+let projectDescription1 = project.projectDescription1;
+let projectDescription2 = project.projectDescription2;
+---
+
+<Layout
+  title={pageTitle}
+  page="Home Spaces"
+>
+  <main>
+    <section class="mt-48">
+      <div class="wrapper flex flex-col gap-16">
+        <h1 class="text-4xl">{projectTitle}</h1>
+        <p>
+          {projectDescription1}
+        </p>
+      </div>
+    </section>
+    <section class="my-36">
+      <div class="wrapper grid grid-cols-1">
+        <img
+          src={imageFile}
+          alt={imageAlt}
+          class="w-full h-96"
+        />
+        <div class="mt-16">
+          <h2 class="text-xl">
+            About {projectTitle}
+          </h2>
+          <p class="mt-8">
+            {projectDescription2}
+          </p>
+        </div>
+      </div>
+    </section>
+    <ProjectGallery
+      client:visible
+      projectID={project.id}
+    />
+  </main>
+</Layout>
