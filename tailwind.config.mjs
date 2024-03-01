@@ -12,7 +12,9 @@ export default {
         128: "32rem",
         144: "36rem",
         160: "40rem",
+        180: "45rem",
         200: "50rem",
+        240: "60rem",
       },
       boxShadow: {
         smooth: [

@@ -62,7 +62,7 @@ export default {
 
 <style lang="scss">
 .dark-overlay {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0);
   z-index: 1;
 }
 .project-thumbnail * {
