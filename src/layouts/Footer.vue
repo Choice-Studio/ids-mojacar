@@ -53,6 +53,7 @@
             <a
               href="https://www.iamjacobcarter.com"
               class="underline"
+              target="_blank"
               >Jacob Carter</a
             >
           </p>
