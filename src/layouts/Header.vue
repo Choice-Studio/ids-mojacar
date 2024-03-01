@@ -1,6 +1,6 @@
 <template>
   <header
-    class="absolute top-0 left-0 flex lg:hidden justify-between items-center w-full mx-auto z-10 wrapper py-2"
+    class="absolute top-0 left-0 flex lg:hidden justify-between items-center w-full mx-auto z-10 wrapper py-2 md:top-2"
   >
     <div class="w-12 h-12 grid place-items-center">
       <a href="/">
@@ -11,16 +11,32 @@
         />
       </a>
     </div>
+    <div class="hidden md:flex justify-end items-center gap-10">
+      <div
+        :key="link.pageName"
+        v-for="link in links"
+        class=""
+      >
+        <a
+          :href="link.pageHREF"
+          class="header text-white text-sm"
+          :class="[link.pageName == pageName ? 'highlight--dot' : '']"
+          @click="toggleNav()"
+        >
+          {{ link.pageName }}
+        </a>
+      </div>
+    </div>
 
     <img
       src="/burger-menu--blue.svg?url"
       alt="menu icon"
-      class="w-8 header__burger-menu"
+      class="w-8 header__burger-menu md:hidden"
       @click="toggleNav()"
     />
 
     <div
-      class="origin-top w-full bg-primary top-0 left-0 h-screen px-4 py-12 text-center flex flex-col justify-center items-center gap-16 fixed"
+      class="origin-top w-full bg-primary top-0 left-0 h-screen px-4 py-12 text-center flex flex-col justify-center items-center gap-16 fixed md:hidden"
       :class="[isNavHidden ? 'nav--hidden' : 'nav-visible']"
     >
       <img
