@@ -43,5 +43,80 @@ let projectDescription2 = project.projectDescription2;
       </div>
     </section>
     <ProjectGallery projectID={project.id} />
+    <section class="grid grid-cols-1 mt-36 gap-px">
+      <div
+        class="w-full h-72 grid place-items-center text-white text-center relative project__our-kitchens"
+      >
+        <div class="dark-overlay absolute top-0 bottom-0 right-0 left-0"></div>
+        <div>
+          <a
+            href="/bathrooms"
+            class="uppercase text-lg"
+          >
+            Our Bathrooms
+          </a>
+          <div class="h-px w-full bg-white"></div>
+        </div>
+      </div>
+      <div
+        class="w-full h-72 grid place-items-center text-white text-center relative project__our-bathrooms"
+      >
+        <div class="dark-overlay absolute top-0 bottom-0 right-0 left-0"></div>
+        <div>
+          <a
+            href="/kitchens"
+            class="uppercase text-lg"
+          >
+            Our Kitchens
+          </a>
+          <div class="h-px w-full bg-white"></div>
+        </div>
+      </div>
+      <div
+        class="w-full h-72 grid place-items-center text-white text-center relative project__our-home-spaces"
+      >
+        <div class="dark-overlay absolute top-0 bottom-0 right-0 left-0"></div>
+        <div>
+          <a
+            href="/home-spaces"
+            class="uppercase text-lg"
+          >
+            Our Home Spaces
+          </a>
+          <div class="h-px w-full bg-white"></div>
+        </div>
+      </div>
+    </section>
   </main>
 </Layout>
+
+<style>
+  .dark-overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .project__our-bathrooms *,
+  .project__our-kitchens *,
+  .project__our-home-spaces * {
+    z-index: 2;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.125rem;
+  }
+
+  .project__our-bathrooms {
+    background-image: url("/project-images/101.jpeg?url");
+    background-size: cover;
+    background-position: center center;
+  }
+  .project__our-kitchens {
+    background-image: url("/project-images/43.jpeg?url");
+    background-size: cover;
+    background-position: center center;
+  }
+  .project__our-home-spaces {
+    background-image: url("/project-images/87.jpeg?url");
+    background-size: cover;
+    background-position: center center;
+  }
+</style>
