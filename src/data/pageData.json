@@ -34,7 +34,7 @@
   },
   {
     "pageName": "Contact",
-    "pageHREF": "/#contact",
+    "pageHREF": "#contact",
     "subLinks": []
   }
 ]
