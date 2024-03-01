@@ -1,5 +1,7 @@
 <template>
-  <footer class="bg-primary w-full text-white py-10">
+  <ContactFooter></ContactFooter>
+
+  <footer class="bg-primary w-full text-white py-10 mt-36">
     <div class="wrapper">
       <div class="grid grid-cols-2 gap-12">
         <div class="">
@@ -54,6 +56,7 @@
 
 <script lang="ts">
 import pageData from "../data/pageData.json";
+import ContactFooter from "../components/ContactFooter.vue";
 
 export default {
   name: "Footer",
@@ -63,6 +66,9 @@ export default {
       links: pageData,
       currentYear: new Date().getFullYear(),
     };
+  },
+  components: {
+    ContactFooter,
   },
 };
 </script>
