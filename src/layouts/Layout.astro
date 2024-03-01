@@ -44,7 +44,7 @@ const { title, page } = Astro.props;
         pageName={page}
       />
       <slot />
-      <Footer client:visible />
+      <Footer />
     </body>
   </html>
   <style is:global lang="scss">

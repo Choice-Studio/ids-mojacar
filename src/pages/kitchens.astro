@@ -13,7 +13,6 @@ let currentPage = pageData[2].pageName;
 >
   <main>
     <Hero
-      client:visible
       title="Kitchens"
       body="Whether you envision a sleek, modern layout with state-of-the-art appliances or a cosy, traditional kitchen with warm, inviting tones, we bring your vision to life with impeccable attention to detail."
       buttonText="Our Kitchen Projects"
@@ -25,10 +24,7 @@ let currentPage = pageData[2].pageName;
       class="mt-36"
       id="projects"
     >
-      <AllProjects
-        filter="kitchen"
-        client:visible
-      />
+      <AllProjects filter="kitchen" />
     </section>
     <section class="bg-primary grid grid-cols-1 gap-24 mt-36">
       <section class="text-white text-center">
@@ -42,10 +38,13 @@ let currentPage = pageData[2].pageName;
                 class="w-full h-80 mt-12"
               />
               <p class="my-12">
-                Here, we have curated a collection of our finest bathroom transformations, each reflecting our passion for crafting spaces that blend relaxation with sophistication.
-                <br>
-                <br>
-                From luxurious spa-like retreats to sleek, modern designs, our portfolio showcases the breadth of our creativity and attention to detail.
+                Here, we have curated a collection of our finest bathroom
+                transformations, each reflecting our passion for crafting spaces
+                that blend relaxation with sophistication.
+                <br />
+                <br />
+                From luxurious spa-like retreats to sleek, modern designs, our portfolio
+                showcases the breadth of our creativity and attention to detail.
               </p>
               <a href="/bathrooms"
                 ><button class="button--white"> View Our Bathrooms</button></a

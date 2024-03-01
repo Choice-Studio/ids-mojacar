@@ -13,7 +13,6 @@ let currentPage = pageData[1].pageName;
 >
   <main>
     <Hero
-      client:visible
       title="Bathrooms"
       body="Our expertise lies in crafting space that resonate with your personal style while ensuring the utmost in luxury and relaxation. Whether it's a modern minimalist haven or a lavish traditional ensemble, our designs are tailored to be your personal oasis."
       buttonText="Our Bathroom Projects"
@@ -21,11 +20,11 @@ let currentPage = pageData[1].pageName;
       buttonColor="primary"
       heroImage="101"
     />
-    <section class="mt-36" id="projects">
-      <AllProjects
-        filter="bathroom"
-        client:visible
-      />
+    <section
+      class="mt-36"
+      id="projects"
+    >
+      <AllProjects filter="bathroom" />
     </section>
     <section class="bg-primary grid grid-cols-1 gap-24 mt-36">
       <section class="text-white text-center">

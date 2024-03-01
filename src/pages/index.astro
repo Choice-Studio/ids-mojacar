@@ -14,7 +14,6 @@ let currentPage = pageData[0].pageName;
 >
   <main class="">
     <Hero
-      client:visible
       title="Interior Design Solutions"
       body="A bespoke interior design agency dedicated to transforming bold ideas into unique spaces."
       buttonText="Learn More"
@@ -73,7 +72,10 @@ let currentPage = pageData[0].pageName;
         </div>
       </div>
     </section>
-    <section class="grid grid-cols-1 gap-32" id="services">
+    <section
+      class="grid grid-cols-1 gap-32"
+      id="services"
+    >
       <ServiceCard
         title="Bathrooms"
         body="Transform your bathroom into a haven of relaxation with our bespoke design solutions. In the hustle and bustle of daily life. your bathroom should be more than just a functional space - it should be your personal retreat."
@@ -81,7 +83,6 @@ let currentPage = pageData[0].pageName;
         imageAlt="A picture of a renovated bathroom interior design."
         buttonHref="/bathrooms"
         buttonText="Our Bathroom Projects"
-        client:visible
       />
       <ServiceCard
         title="Kitchens"
@@ -90,7 +91,6 @@ let currentPage = pageData[0].pageName;
         imageAlt="A picture of a renovated kitchen interior design."
         buttonHref="/kitchens"
         buttonText="Our Kitchen Projects"
-        client:visible
       />
       <ServiceCard
         title="Home Spaces"
@@ -99,7 +99,6 @@ let currentPage = pageData[0].pageName;
         imageAlt="A picture of a renovated living room interior design."
         buttonHref="/home-spaces"
         buttonText="Our Home Spaces"
-        client:visible
       />
     </section>
     <section class="bg-primary py-12 text-white text-center mt-36">
@@ -125,26 +124,17 @@ let currentPage = pageData[0].pageName;
         </div>
       </div>
     </section>
-    <section class="mt-36" id="featured">
+    <section
+      class="mt-36"
+      id="featured"
+    >
       <div class="wrapper">
         <h4 class="text-center text-xl">Featured</h4>
         <div class="grid grid-cols-1 gap-2 relative mt-4">
-          <ProjectThumbnail
-            projectID="0"
-            client:visible
-          />
-          <ProjectThumbnail
-            projectID="1"
-            client:visible
-          />
-          <ProjectThumbnail
-            projectID="2"
-            client:visible
-          />
-          <ProjectThumbnail
-            projectID="3"
-            client:visible
-          />
+          <ProjectThumbnail projectID="0" />
+          <ProjectThumbnail projectID="1" />
+          <ProjectThumbnail projectID="2" />
+          <ProjectThumbnail projectID="3" />
         </div>
       </div>
     </section>

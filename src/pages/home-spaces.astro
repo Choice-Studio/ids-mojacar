@@ -13,7 +13,6 @@ let currentPage = pageData[3].pageName;
 >
   <main>
     <Hero
-      client:visible
       title="Home Spaces"
       body="Our comprehensive approach ensures that your home is a cohesive blend of comfort, style, and functionality, tailored to your unique needs and aesthetic preferences."
       buttonText="Our Home Spaces"
@@ -25,10 +24,7 @@ let currentPage = pageData[3].pageName;
       class="mt-36"
       id="projects"
     >
-      <AllProjects
-        filter="home-space"
-        client:visible
-      />
+      <AllProjects filter="home-space" />
     </section>
     <section class="bg-primary grid grid-cols-1 gap-24 mt-36">
       <section class="text-white text-center">
