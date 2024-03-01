@@ -45,8 +45,16 @@
           />
         </div>
         <div class="flex items-end justify-end col-span-1">
-          <p class="text-right">
+          <p class="text-right text-sm opacity-80">
             © {{ currentYear }} Interior Design Solutions, All rights reserved
+            <br />
+            <br />
+            Made with ♡ by
+            <a
+              href="https://www.iamjacobcarter.com"
+              class="underline"
+              >Jacob Carter</a
+            >
           </p>
         </div>
       </div>

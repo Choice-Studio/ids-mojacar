@@ -1,5 +1,8 @@
 <template>
-  <section class="bg-primary text-white mt-48">
+  <section
+    class="bg-primary text-white mt-48"
+    id="contact"
+  >
     <div class="wrapper bg-primary">
       <div class="">
         <img

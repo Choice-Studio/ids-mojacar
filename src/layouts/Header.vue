@@ -38,6 +38,7 @@
           :href="link.pageHREF"
           class="header-text text-white text-2xl"
           :class="[link.pageName == pageName ? 'highlight--dot' : '']"
+          @click="toggleNav()"
         >
           {{ link.pageName }}
         </a>
