@@ -4,26 +4,29 @@ import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.vue";
 import AllProjects from "../components/AllProjects.vue";
 
-let currentPage = pageData[1].pageName;
+let currentPage = pageData[3].pageName;
 ---
 
 <Layout
-  title="Interior Design Solutions | IDS | Bathrooms"
+  title="Interior Design Solutions | IDS | Home Spaces"
   page={currentPage}
 >
   <main>
     <Hero
       client:visible
-      title="Bathrooms"
-      body="Our expertise lies in crafting space that resonate with your personal style while ensuring the utmost in luxury and relaxation. Whether it's a modern minimalist haven or a lavish traditional ensemble, our designs are tailored to be your personal oasis."
-      buttonText="Our Bathroom Projects"
+      title="Home Spaces"
+      body="Our comprehensive approach ensures that your home is a cohesive blend of comfort, style, and functionality, tailored to your unique needs and aesthetic preferences."
+      buttonText="Our Home Spaces"
       buttonHref="#projects"
       buttonColor="primary"
-      heroImage="101"
+      heroImage="72"
     />
-    <section class="mt-36" id="projects">
+    <section
+      class="mt-36"
+      id="projects"
+    >
       <AllProjects
-        filter="bathroom"
+        filter="home-space"
         client:visible
       />
     </section>
@@ -57,19 +60,23 @@ let currentPage = pageData[1].pageName;
         <div class="wrapper bg-primary">
           <div class="bg-primary text-center py-14">
             <div>
-              <h3 class="text-2xl highlight--underline">Our Home Spaces</h3>
+              <h3 class="text-2xl highlight--underline">Our Bathrooms</h3>
               <img
-                src="/project-images/87.jpeg?url"
+                src="/project-images/97.jpeg?url"
                 alt=""
                 class="w-full h-80 mt-12"
               />
               <p class="my-12">
-                Here, you'll find a collection of complete home transformations,
-                each reflecting our dedication to creating harmonious,
-                personalized living spaces.
+                Here, we have curated a collection of our finest bathroom
+                transformations, each reflecting our passion for crafting spaces
+                that blend relaxation with sophistication.
+                <br />
+                <br />
+                From luxurious spa-like retreats to sleek, modern designs, our portfolio
+                showcases the breadth of our creativity and attention to detail.
               </p>
-              <a href="/home-spaces"
-                ><button class="button--white"> View Our Home Spaces</button></a
+              <a href="/bathrooms"
+                ><button class="button--white"> View Our Bathrooms</button></a
               >
             </div>
           </div>

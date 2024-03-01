@@ -56,7 +56,7 @@ section {
   z-index: 2;
 }
 .dark-overlay {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.25);
   z-index: 1;
 }
 </style>
