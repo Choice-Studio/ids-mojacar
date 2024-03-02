@@ -20,7 +20,7 @@
         >
           <a
             :href="link.pageHREF"
-            class="header text-white text-sm"
+            class="header text-primary text-sm page-link"
             :class="[link.pageName == pageName ? 'highlight--dot' : '']"
             @click="toggleNav()"
           >

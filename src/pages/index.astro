@@ -117,23 +117,33 @@ let currentPage = pageData[0].pageName;
         <h3 class="highlight--underline text-xl md:text-2xl">
           Finding your vision
         </h3>
-        <div class="flex flex-col mt-12 gap-12 md:mt-16 md:items-end md:gap-16">
+        <div
+          class="flex flex-col mt-12 gap-12 md:mt-16 md:items-end md:gap-16 lg:flex-row lg:items-start lg:gap-24"
+        >
           <img
             src="/project-images/106--cropped.png?url"
             alt="3D render of bathroom interior design"
             class="h-80 w-full md:h-128"
           />
-          <p class="md:w-1/2 md:text-right">
-            Leveraging 3D models, we offer the unique opportunity to visualize
-            and experience your living space before any physical work begins.
-            <br />
-            <br />
-            This allows you to explore every aspect of the design to ensure it aligns
-            perfectly with your vision.
-          </p>
-          <a href="/#contact"
-            ><button class="button--white">Contact Us & Learn More</button></a
+          <div
+            class="flex flex-col gap-12 items-center md:items-end lg:items-start"
           >
+            <p
+              class="md:w-1/2 text-center md:text-right lg:text-left lg:w-96 lg:mt-16"
+            >
+              Leveraging 3D models, we offer the unique opportunity to visualize
+              and experience your living space before any physical work begins.
+              <br />
+              <br />
+              This allows you to explore every aspect of the design to ensure it
+              aligns perfectly with your vision.
+            </p>
+            <a
+              href="/#contact"
+              class="lg"
+              ><button class="button--white">Contact Us & Learn More</button></a
+            >
+          </div>
         </div>
       </div>
     </section>
@@ -143,7 +153,9 @@ let currentPage = pageData[0].pageName;
     >
       <div class="wrapper">
         <h4 class="text-center text-xl">Featured</h4>
-        <div class="grid grid-cols-1 gap-2 relative mt-4 md:gap-4">
+        <div
+          class="grid grid-cols-1 gap-2 relative mt-4 md:gap-4 lg:grid-cols-2 lg:gap-4"
+        >
           <ProjectThumbnail projectID="0" />
           <ProjectThumbnail projectID="1" />
           <ProjectThumbnail projectID="2" />
@@ -155,7 +167,8 @@ let currentPage = pageData[0].pageName;
 
   <style is:global lang="scss">
     .header__logo,
-    .header__burger-menu {
+    .header__burger-menu,
+    .page-link {
       filter: brightness(9999);
     }
   </style>

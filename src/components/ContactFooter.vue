@@ -59,6 +59,7 @@ export default {
   background-image: url("/project-images/84.jpeg?url");
   background-position: 50% 50%;
   background-size: cover;
+  max-width: 1250px;
 }
 
 .contact-footer * {

@@ -17,22 +17,24 @@ let projectDescription2 = project.projectDescription2;
   page="Home Spaces"
 >
   <main>
-    <section class="mt-48">
-      <div class="wrapper flex flex-col gap-16">
-        <h1 class="text-4xl">{projectTitle}</h1>
-        <p>
+    <section class="mt-48 md:mt-56">
+      <div class="wrapper flex flex-col gap-16 md:gap-36">
+        <h1 class="text-4xl md:text-5xl md:text-center">{projectTitle}</h1>
+        <p class="md:text-right md:ml-auto md:w-96">
           {projectDescription1}
         </p>
       </div>
     </section>
     <section class="my-36">
-      <div class="wrapper grid grid-cols-1">
+      <div
+        class="wrapper flex flex-col md:flex-row-reverse md:items-center md:text-right md:gap-16"
+      >
         <img
           src={imageFile}
           alt={imageAlt}
-          class="w-full h-96"
+          class="w-full h-96 md:h-112"
         />
-        <div class="mt-16">
+        <div class="mt-16 md:mt-0 md:w-180">
           <h2 class="text-xl">
             About {projectTitle}
           </h2>
@@ -43,7 +45,9 @@ let projectDescription2 = project.projectDescription2;
       </div>
     </section>
     <ProjectGallery projectID={project.id} />
-    <section class="grid grid-cols-1 mt-36 gap-px">
+    <section
+      class="grid grid-cols-1 mt-36 gap-px md:grid-cols-2 lg:grid-cols-3 page-sections"
+    >
       <div
         class="w-full h-72 grid place-items-center text-white text-center relative project__our-bathrooms"
       >
@@ -73,10 +77,10 @@ let projectDescription2 = project.projectDescription2;
         </div>
       </div>
       <div
-        class="w-full h-72 grid place-items-center text-white text-center relative project__our-home-spaces"
+        class="w-full h-72 grid place-items-center text-white text-center relative project__our-home-spaces md:col-span-2 md:h-96 lg:col-span-1 lg:h-72"
       >
         <div class="dark-overlay absolute top-0 bottom-0 right-0 left-0"></div>
-        <div>
+        <div class="">
           <a
             href="/home-spaces"
             class="uppercase text-lg"
@@ -118,5 +122,12 @@ let projectDescription2 = project.projectDescription2;
     background-image: url("/project-images/87.jpeg?url");
     background-size: cover;
     background-position: center center;
+  }
+
+  .page-sections {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1250px;
+    padding: 0 1em;
   }
 </style>

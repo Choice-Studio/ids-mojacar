@@ -7,15 +7,15 @@
         : 'md:flex-row md:text-left',
     ]"
   >
-    <div class="md:w-1/2">
+    <div class="md:w-1/2 lg:w-2/3">
       <img
         :src="'/project-images/' + imageHref + '.jpeg?url'"
         alt="A picture of a house front porch. Walls are painted blue and white."
-        class="aspect-square w-full"
+        class="aspect-square w-full lg:aspect-auto lg:h-128"
       />
     </div>
     <div
-      class="flex flex-col items-center justify-center gap-8 md:w-1/2"
+      class="flex flex-col items-center justify-center gap-8 md:w-1/2 lg:w-128"
       :class="[imagePosition == 'right' ? 'md:items-end' : 'md:items-start']"
     >
       <h3 class="text-4xl">
