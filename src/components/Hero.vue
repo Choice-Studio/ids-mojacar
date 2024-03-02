@@ -7,7 +7,7 @@
   >
     <div class="dark-overlay absolute top-0 bottom-0 right-0 left-0"></div>
     <div
-      class="wrapper w-full flex flex-col justify-center items-center gap-12 md:gap-36"
+      class="wrapper w-full flex flex-col justify-center items-center gap-12 md:gap-40"
     >
       <h1 class="text-3xl md:text-6xl md:mt-36">{{ title }}</h1>
       <div class="flex flex-col gap-12 md:gap-8 md:items-end w-full">

@@ -30,24 +30,33 @@ let currentPage = pageData[1].pageName;
       <section class="text-white text-center">
         <div class="wrapper bg-primary">
           <div class="bg-primary text-center py-14">
-            <div>
-              <h3 class="text-2xl highlight--underline">Our Kitchens</h3>
+            <div class="md:flex md:items-center md:gap-16">
+              <h3 class="text-2xl highlight--underline md:hidden">
+                Our Kitchens
+              </h3>
               <img
                 src="/project-images/40.jpeg?url"
                 alt=""
-                class="w-full h-80 mt-12"
+                class="w-full h-80 mt-12 md:h-112 md:mt-0"
               />
-              <p class="my-12">
-                Our kitchen design portfolio showcases a variety of styles and
-                solutions that we've crafted for clients just like you.
-                <br />
-                <br />
-                From modern minimalism to classic elegance, each kitchen is a testament
-                to our commitment to quality, creativity, and bespoke design.
-              </p>
-              <a href="/kitchens"
-                ><button class="button--white"> View Our Kitchens</button></a
-              >
+              <div class="md:text-left md:w-4/5">
+                <h3
+                  class="text-2xl highlight--underline highlight--underline--left hidden md:block"
+                >
+                  Our Kitchens
+                </h3>
+                <p class="my-12">
+                  Our kitchen design portfolio showcases a variety of styles and
+                  solutions that we've crafted for clients just like you.
+                  <br />
+                  <br />
+                  From modern minimalism to classic elegance, each kitchen is a testament
+                  to our commitment to quality, creativity, and bespoke design.
+                </p>
+                <a href="/kitchens"
+                  ><button class="button--white"> View Our Kitchens</button></a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -55,21 +64,34 @@ let currentPage = pageData[1].pageName;
       <section class="text-white text-center">
         <div class="wrapper bg-primary">
           <div class="bg-primary text-center py-14">
-            <div>
-              <h3 class="text-2xl highlight--underline">Our Home Spaces</h3>
+            <div
+              class="md:flex md:items-center md:gap-16 md:flex-row-reverse md:justify-end"
+            >
+              <h3 class="text-2xl highlight--underline md:hidden">
+                Our Kitchens
+              </h3>
               <img
                 src="/project-images/87.jpeg?url"
                 alt=""
-                class="w-full h-80 mt-12"
+                class="w-full h-80 mt-12 md:h-112 md:mt-0"
               />
-              <p class="my-12">
-                Here, you'll find a collection of complete home transformations,
-                each reflecting our dedication to creating harmonious,
-                personalized living spaces.
-              </p>
-              <a href="/home-spaces"
-                ><button class="button--white"> View Our Home Spaces</button></a
-              >
+              <div class="md:text-right md:w-4/5">
+                <h3
+                  class="text-2xl highlight--underline highlight--underline--right hidden md:block"
+                >
+                  Our Home Spaces
+                </h3>
+                <p class="my-12">
+                  Here, you'll find a collection of complete home
+                  transformations, each reflecting our dedication to creating
+                  harmonious, personalized living spaces.
+                </p>
+                <a href="/home-spaces"
+                  ><button class="button--white">
+                    View Our Home Spaces</button
+                  ></a
+                >
+              </div>
             </div>
           </div>
         </div>

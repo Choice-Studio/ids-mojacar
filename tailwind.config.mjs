@@ -9,6 +9,7 @@ export default {
         68: "17rem",
         84: "21rem",
         100: "25rem",
+        112: "28rem",
         128: "32rem",
         144: "36rem",
         160: "40rem",
