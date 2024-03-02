@@ -1,6 +1,6 @@
 <template>
   <header
-    class="absolute top-1 left-0 flex justify-center z-10 py-2 md:top-2 lg:top-4 w-full"
+    class="absolute top-1 left-0 flex justify-center z-10 py-2 md:top-2 xl:top-4 w-full"
   >
     <div class="flex justify-between items-center top-header">
       <div class="grid place-items-center">

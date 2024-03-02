@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-primary lg:py-4">
+  <section class="bg-primary xl:py-4">
     <section
       class="hero w-full text-center flex flex-col justify-center items-center relative hero-wrapper"
       :style="
