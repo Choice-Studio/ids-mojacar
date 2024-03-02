@@ -26,29 +26,39 @@ let currentPage = pageData[2].pageName;
     >
       <AllProjects filter="kitchen" />
     </section>
-    <section class="bg-primary grid grid-cols-1 gap-24 mt-36">
+    <section class="bg-primary grid grid-cols-1 gap-24 mt-36 md:mt-48 lg:gap-0">
       <section class="text-white text-center">
         <div class="wrapper bg-primary">
           <div class="bg-primary text-center py-14">
-            <div>
-              <h3 class="text-2xl highlight--underline">Our Bathrooms</h3>
+            <div class="md:flex md:items-center md:gap-16 lg:gap-32">
+              <h3 class="text-2xl highlight--underline md:hidden">
+                Our Bathrooms
+              </h3>
               <img
                 src="/project-images/97.jpeg?url"
                 alt=""
-                class="w-full h-80 mt-12"
+                class="w-full h-80 mt-12 md:h-112 md:mt-0"
               />
-              <p class="my-12">
-                Here, we have curated a collection of our finest bathroom
-                transformations, each reflecting our passion for crafting spaces
-                that blend relaxation with sophistication.
-                <br />
-                <br />
-                From luxurious spa-like retreats to sleek, modern designs, our portfolio
-                showcases the breadth of our creativity and attention to detail.
-              </p>
-              <a href="/bathrooms"
-                ><button class="button--white"> View Our Bathrooms</button></a
-              >
+              <div class="md:text-left md:w-4/5">
+                <h3
+                  class="text-2xl highlight--underline highlight--underline--left hidden md:block lg:max-w-80"
+                >
+                  Our Bathrooms
+                </h3>
+                <p class="my-12 lg:max-w-80">
+                  Here, we have curated a collection of our finest bathroom
+                  transformations, each reflecting our passion for crafting
+                  spaces that blend relaxation with sophistication.
+                  <br />
+                  <br />
+                  From luxurious spa-like retreats to sleek, modern designs, our
+                  portfolio showcases the breadth of our creativity and attention
+                  to detail.
+                </p>
+                <a href="/bathrooms"
+                  ><button class="button--white"> View Our Bathrooms</button></a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -56,21 +66,34 @@ let currentPage = pageData[2].pageName;
       <section class="text-white text-center">
         <div class="wrapper bg-primary">
           <div class="bg-primary text-center py-14">
-            <div>
-              <h3 class="text-2xl highlight--underline">Our Home Spaces</h3>
+            <div
+              class="md:flex md:items-center md:gap-16 md:flex-row-reverse md:justify-end lg:gap-32"
+            >
+              <h3 class="text-2xl highlight--underline md:hidden">
+                Our Home Spaces
+              </h3>
               <img
                 src="/project-images/87.jpeg?url"
                 alt=""
-                class="w-full h-80 mt-12"
+                class="w-full h-80 mt-12 md:h-112 md:mt-0"
               />
-              <p class="my-12">
-                Here, you'll find a collection of complete home transformations,
-                each reflecting our dedication to creating harmonious,
-                personalized living spaces.
-              </p>
-              <a href="/home-spaces"
-                ><button class="button--white"> View Our Home Spaces</button></a
-              >
+              <div class="md:text-right md:w-4/5">
+                <h3
+                  class="text-2xl highlight--underline highlight--underline--right hidden md:block lg:max-w-80 lg:ml-auto"
+                >
+                  Our Home Spaces
+                </h3>
+                <p class="my-12 lg:max-w-80 lg:ml-auto">
+                  Here, you'll find a collection of complete home
+                  transformations, each reflecting our dedication to creating
+                  harmonious, personalized living spaces.
+                </p>
+                <a href="/home-spaces"
+                  ><button class="button--white">
+                    View Our Home Spaces</button
+                  ></a
+                >
+              </div>
             </div>
           </div>
         </div>

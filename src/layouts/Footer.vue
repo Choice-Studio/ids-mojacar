@@ -3,12 +3,14 @@
 
   <footer class="bg-primary w-full text-white py-10 mt-36 md:pb-4 md:pt-16">
     <div class="wrapper">
-      <div class="grid grid-cols-2 gap-12 md:grid-cols-10">
-        <div class="place-items-center hidden md:grid md:col-span-4">
+      <div class="grid grid-cols-2 gap-12 md:grid-cols-10 lg:gap-36">
+        <div
+          class="items-center justify-center hidden md:flex md:col-span-4 lg:justify-start lg:-mt-24"
+        >
           <img
             src="/ids-logo.svg?url"
             alt="IDS Logo"
-            class="w-40 opacity-50 md:w-full"
+            class="w-40 opacity-50 md:w-full lg:w-96"
           />
         </div>
         <div class="md:col-span-3">

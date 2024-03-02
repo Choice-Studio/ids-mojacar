@@ -26,28 +26,37 @@ let currentPage = pageData[3].pageName;
     >
       <AllProjects filter="home-space" />
     </section>
-    <section class="bg-primary grid grid-cols-1 gap-24 mt-36">
+    <section class="bg-primary grid grid-cols-1 gap-24 mt-36 md:mt-48 lg:gap-0">
       <section class="text-white text-center">
         <div class="wrapper bg-primary">
           <div class="bg-primary text-center py-14">
-            <div>
-              <h3 class="text-2xl highlight--underline">Our Kitchens</h3>
+            <div class="md:flex md:items-center md:gap-16 lg:gap-32">
+              <h3 class="text-2xl highlight--underline md:hidden">
+                Our Kitchens
+              </h3>
               <img
                 src="/project-images/40.jpeg?url"
                 alt=""
-                class="w-full h-80 mt-12"
+                class="w-full h-80 mt-12 md:h-112 md:mt-0"
               />
-              <p class="my-12">
-                Our kitchen design portfolio showcases a variety of styles and
-                solutions that we've crafted for clients just like you.
-                <br />
-                <br />
-                From modern minimalism to classic elegance, each kitchen is a testament
-                to our commitment to quality, creativity, and bespoke design.
-              </p>
-              <a href="/kitchens"
-                ><button class="button--white"> View Our Kitchens</button></a
-              >
+              <div class="md:text-left md:w-4/5">
+                <h3
+                  class="text-2xl highlight--underline highlight--underline--left hidden md:block lg:max-w-80"
+                >
+                  Our Kitchens
+                </h3>
+                <p class="my-12 lg:max-w-80">
+                  Our kitchen design portfolio showcases a variety of styles and
+                  solutions that we've crafted for clients just like you.
+                  <br />
+                  <br />
+                  From modern minimalism to classic elegance, each kitchen is a testament
+                  to our commitment to quality, creativity, and bespoke design.
+                </p>
+                <a href="/kitchens"
+                  ><button class="button--white"> View Our Kitchens</button></a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -55,25 +64,37 @@ let currentPage = pageData[3].pageName;
       <section class="text-white text-center">
         <div class="wrapper bg-primary">
           <div class="bg-primary text-center py-14">
-            <div>
-              <h3 class="text-2xl highlight--underline">Our Bathrooms</h3>
+            <div
+              class="md:flex md:items-center md:gap-16 md:flex-row-reverse md:justify-end lg:gap-32"
+            >
+              <h3 class="text-2xl highlight--underline md:hidden">
+                Our Bathrooms
+              </h3>
               <img
                 src="/project-images/97.jpeg?url"
                 alt=""
-                class="w-full h-80 mt-12"
+                class="w-full h-80 mt-12 md:h-112 md:mt-0"
               />
-              <p class="my-12">
-                Here, we have curated a collection of our finest bathroom
-                transformations, each reflecting our passion for crafting spaces
-                that blend relaxation with sophistication.
-                <br />
-                <br />
-                From luxurious spa-like retreats to sleek, modern designs, our portfolio
-                showcases the breadth of our creativity and attention to detail.
-              </p>
-              <a href="/bathrooms"
-                ><button class="button--white"> View Our Bathrooms</button></a
-              >
+              <div class="md:text-right md:w-4/5">
+                <h3
+                  class="text-2xl highlight--underline highlight--underline--right hidden md:block lg:max-w-80 lg:ml-auto"
+                >
+                  Our Bathrooms
+                </h3>
+                <p class="my-12 lg:max-w-80 lg:ml-auto">
+                  Here, we have curated a collection of our finest bathroom
+                  transformations, each reflecting our passion for crafting
+                  spaces that blend relaxation with sophistication.
+                  <br />
+                  <br />
+                  From luxurious spa-like retreats to sleek, modern designs, our
+                  portfolio showcases the breadth of our creativity and attention
+                  to detail.
+                </p>
+                <a href="/bathrooms"
+                  ><button class="button--white"> View Our Bathrooms</button></a
+                >
+              </div>
             </div>
           </div>
         </div>

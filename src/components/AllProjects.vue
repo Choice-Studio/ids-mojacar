@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper grid grid-cols-1 gap-2">
+  <div class="wrapper grid grid-cols-1 gap-2 lg:grid-cols-2 lg:gap-4">
     <ProjectThumbnail
       v-for="project in projects"
       :key="project.id"

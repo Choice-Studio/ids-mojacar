@@ -3,7 +3,7 @@
     class="w-full wrapper flex flex-col gap-8 text-center md:justify-end md:items-centre md:gap-16"
     :class="[
       imagePosition == 'right'
-        ? 'md:flex-row-reverse text-right'
+        ? 'md:flex-row-reverse md:text-right'
         : 'md:flex-row md:text-left',
     ]"
   >
