@@ -41,8 +41,19 @@ export default {
   }
   @for $i from 1 through 36 {
     img:nth-child(#{$i}) {
-      $h: (random(400) + 120) + px;
+      $h: 100%;
       width: $h;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .masonry-with-columns {
+    @for $i from 1 through 36 {
+      img:nth-child(#{$i}) {
+        $h: (random(400) + 100) + px;
+        width: $h;
+      }
     }
   }
 }
