@@ -1,6 +1,6 @@
 <template>
   <section
-    class="bg-primary text-white mt-48 md:w-full md:relative md:flex md:items-end md:justify-end lg:py-4 lg:px-8 lg:mt-5"
+    class="bg-primary text-white mt-48 md:w-full md:relative md:flex md:items-end md:justify-end lg:py-4 lg:px-8 lg:mt-56"
     id="contact"
   >
     <div
