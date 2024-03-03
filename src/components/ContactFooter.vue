@@ -24,7 +24,7 @@
               and guide you every step of the way.
             </p>
           </div>
-          <div class="grid grid-cols-2 gap-16 mx-4 md:gap-10">
+          <div class="grid grid-cols-2 gap-12 mx-4 md:gap-10">
             <div class="flex flex-col items-center gap-3">
               <p>Tel</p>
               <div class="bg-white h-px w-2/3"></div>
