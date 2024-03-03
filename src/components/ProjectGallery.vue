@@ -1,5 +1,5 @@
 <template>
-  <section class="wrapper grid grid-cols-1 gap-2">
+  <section class="wrapper masonry-with-columns">
     <img
       :key="image"
       v-for="image in project.projectImages"
@@ -29,4 +29,21 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.masonry-with-columns {
+  display: flex;
+  flex-wrap: wrap;
+  img {
+    height: 25em;
+    line-height: 25em;
+    margin: 0 1rem 1rem 0;
+    flex: 1 0 auto;
+  }
+  @for $i from 1 through 36 {
+    img:nth-child(#{$i}) {
+      $h: (random(400) + 120) + px;
+      width: $h;
+    }
+  }
+}
+</style>
