@@ -113,4 +113,7 @@ li {
 .main-list {
   margin-top: -1.5em;
 }
+a {
+  font-weight: normal !important;
+}
 </style>
