@@ -33,7 +33,7 @@
             <div class="flex flex-col items-center gap-3">
               <p>Email</p>
               <div class="bg-white h-px w-2/3"></div>
-              <p>example@gmail.com</p>
+              <p>ids.mojacar@gmail.com</p>
             </div>
           </div>
         </div>

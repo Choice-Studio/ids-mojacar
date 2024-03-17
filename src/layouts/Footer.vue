@@ -22,7 +22,7 @@
           <div class="my-8">
             <p>Email</p>
             <div class="h-px w-20 bg-white my-3"></div>
-            <p>example@gmail.com</p>
+            <p>ids.mojacar@gmail.com</p>
           </div>
         </div>
         <ul class="main-list md:col-span-3">
