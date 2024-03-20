@@ -3,9 +3,9 @@
 
   <footer class="bg-primary w-full text-white py-10 mt-36 md:pb-4 md:pt-16">
     <div class="wrapper">
-      <div class="grid grid-cols-2 gap-12 md:grid-cols-10 lg:gap-36">
+      <div class="grid grid-cols-2 gap-12 md:grid-cols-3 lg:gap-36">
         <div
-          class="items-center justify-center hidden md:flex md:col-span-4 lg:justify-start lg:-mt-24"
+          class="items-center justify-center hidden md:flex lg:justify-start lg:-mt-24"
         >
           <img
             src="/ids-logo.svg?url"
@@ -13,7 +13,7 @@
             class="w-40 opacity-50 md:w-full lg:w-96"
           />
         </div>
-        <div class="md:col-span-3">
+        <div class="">
           <div>
             <p>Tel</p>
             <div class="h-px w-20 bg-white my-3"></div>
@@ -25,7 +25,7 @@
             <p>ids.mojacar@gmail.com</p>
           </div>
         </div>
-        <ul class="main-list md:col-span-3">
+        <ul class="main-list">
           <li
             v-for="link in links"
             :key="link.pageName"
@@ -50,7 +50,7 @@
           <img
             src="/ids-logo.svg?url"
             alt="IDS Logo"
-            class="w-40 opacity-50"
+            class="w-44 opacity-50"
           />
         </div>
         <div
