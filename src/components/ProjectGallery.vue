@@ -1,5 +1,5 @@
 <template>
-  <section class="wrapper masonry-with-columns">
+  <section class="wrapper masonry-with-columns -mr-4">
     <img
       :key="image"
       v-for="image in project.projectImages"
