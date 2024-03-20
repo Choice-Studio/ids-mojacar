@@ -344,19 +344,8 @@ const { title, page } = Astro.props;
     body {
       max-width: 100vw;
       overflow-x: hidden;
-    }
-
-    @media screen and (min-width: 768px) {
-      .highlight--underline--right::after {
-        left: auto !important;
-        margin-right: 0;
-        width: 35%;
-      }
-      .highlight--underline--left::after {
-        right: auto !important;
-        margin-left: 0;
-        width: 35%;
-      }
+      width: 100vw !important;
+      position: sticky;
     }
 
     @media screen and (min-width: 1024px) {
@@ -378,12 +367,6 @@ const { title, page } = Astro.props;
         right: auto !important;
         margin-left: 0;
         width: 35%;
-      }
-    }
-
-    @media screen and (min-width: 1024px) {
-      .wrapper {
-        max-width: 1250px;
       }
     }
   </style>

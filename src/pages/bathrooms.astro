@@ -2,7 +2,7 @@
 import pageData from "../data/pageData.json";
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.vue";
-import AllProjects from "../components/AllProjects.vue";
+import ProjectGallery from "../components/ProjectGallery.vue";
 
 let currentPage = pageData[1].pageName;
 ---
@@ -24,7 +24,7 @@ let currentPage = pageData[1].pageName;
       class="mt-36"
       id="projects"
     >
-      <AllProjects filter="bathroom" />
+      <ProjectGallery projectID="0" />
     </section>
     <section class="bg-primary grid grid-cols-1 gap-24 mt-36 md:mt-48 lg:gap-0">
       <section class="text-white text-center">
