@@ -65,12 +65,28 @@
   },
   {
     "id": 1,
-    "projectTitle": "Cheltenham Hotel Renovation",
-    "projectType": "home-space",
+    "projectTitle": "Kitchen",
+    "projectType": "kitchen",
     "imageFile": "36.jpeg",
     "imagePosition": "50% 75%",
-    "projectHref": "cheltenham-hotel-renovation",
-    "projectImages": ["36.jpeg"]
+    "projectHref": "kitchen",
+    "projectImages": [
+      "12.jpg",
+      "13.jpg",
+      "14.jpg",
+      "33.jpeg",
+      "34.jpeg",
+      "35.jpeg",
+      "37.jpeg",
+      "39.jpeg",
+      "40.jpeg",
+      "41.jpeg",
+      "42.jpeg",
+      "114.jpg",
+      "112.jpg",
+      "113.jpg",
+      "43.jpeg"
+    ]
   },
   {
     "id": 2,

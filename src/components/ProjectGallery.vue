@@ -39,7 +39,7 @@ export default {
     margin: 0 1rem 1rem 0;
     flex: 1 0 auto;
   }
-  @for $i from 1 through 36 {
+  @for $i from 1 through 1000 {
     img:nth-child(#{$i}) {
       $h: 100%;
       width: $h;
@@ -49,7 +49,7 @@ export default {
 
 @media screen and (min-width: 768px) {
   .masonry-with-columns {
-    @for $i from 1 through 36 {
+    @for $i from 1 through 1000 {
       img:nth-child(#{$i}) {
         $h: (random(400) + 100) + px;
         width: $h;

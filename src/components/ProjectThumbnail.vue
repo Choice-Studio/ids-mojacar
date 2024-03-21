@@ -11,10 +11,10 @@
     v-if="filter == 'all' || projects[projectID].projectType == filter"
   >
     <div class="dark-overlay absolute top-0 bottom-0 right-0 left-0"></div>
-    <h3 class="text-2xl md:w-96">
+    <h3 class="text-2xl md:w-96 mb-4">
       {{ projects[projectID].projectTitle }}
     </h3>
-    <p
+    <!-- <p
       v-html="[
         projects[projectID].projectType == 'kitchen'
           ? 'Kitchen Renovation'
@@ -25,7 +25,7 @@
           : '',
       ]"
       class="text-lg my-3 md:my-2"
-    ></p>
+    ></p> -->
     <div class="flex items-center justify-center flex-col gap-1">
       <a
         :href="'/projects/' + projects[projectID].projectHref"
