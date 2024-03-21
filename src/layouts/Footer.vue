@@ -1,6 +1,5 @@
 <template>
   <ContactFooter></ContactFooter>
-
   <footer class="bg-primary w-full text-white py-10 mt-36 md:pb-4 md:pt-16">
     <div class="wrapper">
       <div class="grid grid-cols-2 gap-12 md:grid-cols-3 lg:gap-36">
